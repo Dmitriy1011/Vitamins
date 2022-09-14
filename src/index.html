@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('html/sprites.html', {})
+    <div class="top-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-container">
+                    <img class="header__logo" src="@img/svg/logo.svg" alt="Логотип">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="#">FAQ</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Оплата и доставка</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Возврат</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Исследования</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Личный кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <span class="header__phone">
+                        8 8(800) 600-09-90
+                    </span>
+                    <div class="header__cart">
+                        <svg class="header__cart-img">
+                            <use xlink:href="#_cart"></use>
+                        </svg>
+                        <span class="header__cart-counter">1</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-container">
+                    <div class="hero__wrapper">
+                        <img class="hero__img" src="@img/png/Mask Group.webp" alt="Рисунок">
+                        <div class="hero__content">
+                            <div class="hero__content-top">
+                                <h1 class="hero__content-top-title">
+                                    АКТИВИРУЙ ИММУНИТЕТ!
+                                </h1>
+                                <p class="hero__content-top-descr">
+                                    Всего пять секунд в день помогут укрепить иммунитет
+                                    и повысить защитные силы организма
+                                </p>
+                            </div>
+                            <div class="hero__content-bottom">
+                                <h2 class="hero__content-bottom-title">
+                                    NOOTRIS ПОМОГАЕТ
+                                </h2>
+                                <p class="hero__content-bottom-descr">
+                                    Вашему организму во время пандемии
+                                    и сезонных простуд
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__empty"></div>
+                </div>
+            </div>
+        </section>
+        <div class="background">
+            <div class="background__wrapper">
+                <img class="background__wrapper-img img-1" src="@img/svg/gradient-1.svg" alt="Вектор1">
+                <img class="background__wrapper-img img-2" src="@img/svg/gradient-2.svg" alt="Вектор2">
+                <img class="background__wrapper-img img-3" src="@img/svg/gradient-3.svg" alt="Вектор3">
+                <img class="background__wrapper-img img-4" src="@img/svg/gradient-4.svg" alt="Вектор4">
+                <img class="background__wrapper-img img-5" src="@img/svg/gradient-5.svg" alt="Вектор5">
+                <img class="background__wrapper-img img-6" src="@img/svg/gradient-6.svg" alt="Вектор6">
+                <img class="background__wrapper-img img-7" src="@img/svg/gradient-7.svg" alt="Вектор7">
+                <img class="background__wrapper-img img-8" src="@img/svg/gradient-8.svg" alt="Вектор8">
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="order">
+        <div class="container">
+            <div class="order-container"></div>
+        </div>
+    </section> -->
+</body>
+
+</html>

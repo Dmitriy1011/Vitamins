@@ -1,0 +1,63 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+.top-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    z-index: 3;
+    background-color: $blackBgColor;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 80px 24px 64px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__link {
+        @include similarStyles;
+    }
+
+    &__phone {
+        @include similarStyles;
+    }
+
+    &__cart {
+        position: relative;
+        cursor: pointer;
+
+        &-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        &-counter {
+            position: absolute;
+            top: 20px;
+            right: -5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            font-weight: $font-weight-400;
+            font-size: $font-size-12;
+            line-height: $line-height-24;
+            color: $fontBlackColor;
+            background-color: $yellowColor;
+        }
+    }
+}
