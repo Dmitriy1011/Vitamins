@@ -29,86 +29,21 @@
     }
 
     &__content {
-        &-price {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 59px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 111px;
+        grid-template-areas: "ginger delivery virus";
 
-            &-cross {
-                margin-right: 32px;
-                font-weight: $font-weight-400;
-                font-size: $font-size-36;
-                line-height: $line-height-43;
-                text-decoration: 2px line-through;
-                color: $fontCrossPriceColor;
-            }
-
-            &-origin {
-                font-weight: $font-weight-400;
-                font-size: $font-size-48;
-                line-height: $line-height-57;
-                color: $fontWhiteColor;
-            }
+        &-ginger {
+            grid-area: ginger;
         }
 
-        &-image {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 45px;
+        &-delivery {
+            grid-area: delivery;
         }
 
-        &-text {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 64px;
-
-            &-first {
-                @include similarStyles-2;
-                text-align: center;
-
-                &-upper {
-                    color: $fontWhiteColor;
-                }
-
-                &-lower {
-                    color: $yellowColor;
-                }
-            }
-
-            &-second {
-                text-align: center;
-
-                &-upper {
-                    margin-bottom: 8px;
-                    font-weight: $font-weight-400;
-                    font-size: $font-size-36;
-                    line-height: $line-height-43;
-                    color: $fontWhiteColor;
-                }
-
-                &-lower {
-                    font-weight: $font-weight-400;
-                    font-size: $font-size-24;
-                    line-height: $line-height-28;
-                    color: $yellowColor;
-                }
-            }
-
-            &-third {
-                @include similarStyles-2;
-                text-align: center;
-
-                &-upper {
-                    color: $fontWhiteColor;
-                }
-
-                &-lower {
-                    color: $yellowColor;
-                }
-            }
+        &-virus {
+            grid-area: virus;
         }
     }
 
@@ -126,4 +61,10 @@
             cursor: pointer;
         }
     }
+
+    @media(max-width: 1366px) {}
+
+    @media(max-width: 992px) {}
+
+    @media(max-width: 576px) {}
 }

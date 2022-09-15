@@ -60,4 +60,30 @@
             background-color: $yellowColor;
         }
     }
+
+    @media(max-width: 1366px) {
+        &__nav {
+            display: none;
+        }
+
+        &__cart {
+            display: none;
+        }
+    }
+
+    @media(max-width: 992px) {
+        &-container {
+            padding: 24px 35px 24px 35px;
+        }
+    }
+
+    @media(max-width: 576px) {
+        &-container {
+            padding: 24px 25px 24px 25px;
+        }
+
+        &__phone {
+            display: none;
+        }
+    }
 }
