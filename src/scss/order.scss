@@ -1,12 +1,129 @@
 @import './variables.scss';
 
 .order {
-    // position: relative;
-    // background-color: $blackBgColor;
-    // z-index: 0;
+    position: relative;
+    background-color: $blackBgColor;
 
-    // &-container {
-    //     width: 100%;
-    //     min-height: 500px;
-    // }
+    &-container {
+        padding: 0 177px 112px 177px;
+        width: 100%;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 105px;
+        font-weight: $font-weight-700;
+        font-size: $font-size-48;
+        line-height: 57px;
+
+        &-upper {
+            color: $fontWhiteColor;
+        }
+
+        &-lower {
+            color: $yellowColor;
+        }
+    }
+
+    &__content {
+        &-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 59px;
+
+            &-cross {
+                margin-right: 32px;
+                font-weight: $font-weight-400;
+                font-size: $font-size-36;
+                line-height: $line-height-43;
+                text-decoration: 2px line-through;
+                color: $fontCrossPriceColor;
+            }
+
+            &-origin {
+                font-weight: $font-weight-400;
+                font-size: $font-size-48;
+                line-height: $line-height-57;
+                color: $fontWhiteColor;
+            }
+        }
+
+        &-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 64px;
+
+            &-first {
+                @include similarStyles-2;
+                text-align: center;
+
+                &-upper {
+                    color: $fontWhiteColor;
+                }
+
+                &-lower {
+                    color: $yellowColor;
+                }
+            }
+
+            &-second {
+                text-align: center;
+
+                &-upper {
+                    margin-bottom: 8px;
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-36;
+                    line-height: $line-height-43;
+                    color: $fontWhiteColor;
+                }
+
+                &-lower {
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-24;
+                    line-height: $line-height-28;
+                    color: $yellowColor;
+                }
+            }
+
+            &-third {
+                @include similarStyles-2;
+                text-align: center;
+
+                &-upper {
+                    color: $fontWhiteColor;
+                }
+
+                &-lower {
+                    color: $yellowColor;
+                }
+            }
+        }
+    }
+
+    &__lower-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-btn {
+            padding: 16px 32px;
+            border-radius: 7px;
+            border: none;
+            background-color: $yellowColor;
+            @include similarStyles-2;
+            cursor: pointer;
+        }
+    }
 }
