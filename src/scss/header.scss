@@ -20,6 +20,13 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin-bottom: -10px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
     }
 
     &__item:not(:last-child) {
