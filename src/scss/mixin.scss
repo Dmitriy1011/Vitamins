@@ -13,3 +13,9 @@
   font-size: $font-size-18;
   line-height: $line-height-21;
 }
+
+@mixin similarStyles-3 {
+  font-weight: $font-weight-400;
+  font-size: $font-size-36;
+  line-height: $line-height-43;
+}

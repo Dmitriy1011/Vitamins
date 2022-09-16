@@ -17,7 +17,7 @@
         margin-bottom: 105px;
         font-weight: $font-weight-700;
         font-size: $font-size-48;
-        line-height: 57px;
+        line-height: $line-height-57;
 
         &-upper {
             color: $fontWhiteColor;
@@ -28,22 +28,100 @@
         }
     }
 
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 59px;
+
+        &-cross {
+            margin-right: 32px;
+            @include similarStyles-3;
+            text-decoration: line-through 2px;
+            color: $fontCrossPriceColor;
+        }
+
+        &-actual {
+            font-weight: $font-weight-400;
+            font-size: $font-size-48;
+            line-height: $line-height-57;
+            color: $fontWhiteColor;
+        }
+    }
+
     &__content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: inherit;
         gap: 111px;
         grid-template-areas: "ginger delivery virus";
+        margin-bottom: 64px;
+        min-height: 300px;
 
         &-ginger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             grid-area: ginger;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                @include similarStyles-2;
+                text-align: center;
+                color: $fontWhiteColor;
+
+                &-orange {
+                    color: $yellowColor;
+                }
+            }
         }
 
         &-delivery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             grid-area: delivery;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-upper {
+                    margin-bottom: 8px;
+                    @include similarStyles-3;
+                    color: $fontWhiteColor;
+                }
+
+                &-lower {
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-24;
+                    line-height: $line-height-28;
+                    color: $yellowColor;
+                }
+            }
         }
 
         &-virus {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             grid-area: virus;
+            
+            &-text {
+                display: flex;
+                flex-direction: column;
+                @include similarStyles-2;
+                text-align: center;
+                color: $fontWhiteColor;
+
+                &-orange {
+                    color: $yellowColor;
+                }
+            }
         }
     }
 
