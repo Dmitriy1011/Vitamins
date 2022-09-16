@@ -140,9 +140,97 @@
         }
     }
 
-    @media(max-width: 1366px) {}
+    @media(max-width: 1366px) {
+        &-container {
+            padding: 0 50px 112px 50px;
+        }
 
-    @media(max-width: 992px) {}
+        &__title {
+            margin-bottom: 76px;
+        }
 
-    @media(max-width: 576px) {}
+        &__content {
+            min-height: 250px;
+
+            &-delivery {
+                &-text {
+                    &-upper {
+                        font-size: $font-size-28;
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 992px) {
+        &-container {
+            padding: 0 25px 112px 25px;
+        }
+
+        &__title {
+            padding-top: 30px;
+            font-size: 31px;
+            text-align: center;
+        }
+
+        &__content {
+            grid-template-columns: minmax(1fr, auto);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                "ginger"
+                "delivery"
+                "virus"
+            ;
+            min-height: 1000px;
+
+            &-ginger {
+                &-text {
+                    line-height: 24px;
+                }
+            }
+
+            &-virus {
+                &-text {
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 576px) {
+        &-container {
+            padding: 0 15px 90px 15px;
+        }
+
+        &__title {
+            margin-bottom: 54px;
+            font-size: 28px;
+        }
+
+        &__price {
+            &-cross {
+                font-size: 32px;
+            }
+    
+            &-actual {
+                font-size: 39px;
+                color: $fontWhiteColor;
+            }
+        }
+
+        &__content {
+            min-height: 250px;
+            gap: 90px;
+
+            &-delivery {
+                &-text {
+                    &-upper {
+                        font-size: 25px;
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+    }
 }
