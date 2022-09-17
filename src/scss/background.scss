@@ -17,14 +17,14 @@
 
             &.img-1 {
                 left: 0;
-                bottom: 0;
-                z-index: 1;
+                bottom: 104px;
+                z-index: 6;
             }
 
             &.img-2 {
                 top: 0;
                 left: 0;
-                z-index: 2;
+                z-index: 11;
             }
 
             &.img-3 {
@@ -40,7 +40,7 @@
             }
 
             &.img-5 {
-                bottom: 0;
+                bottom: 118px;
                 left: 0;
                 right: 0;
                 z-index: 5;
@@ -56,14 +56,12 @@
                 bottom: 0;
                 right: 0;
                 z-index: 7;
-                opacity: .1;
             }
 
-            &.img-7 {
+            &.img-8 {
                 top: 0;
                 left: 0;
-                z-index: 8;
-                opacity: .1;
+                z-index: 2;
             }
         }
     }
