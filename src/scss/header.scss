@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 80px 24px 64px;
+        padding: 24px 80px 19px 64px;
     }
 
     &__list {
@@ -23,6 +23,7 @@
         flex-wrap: wrap;
         max-width: 800px;
         margin-bottom: -10px;
+        margin-left: 65px;
     }
 
     &__item {
@@ -30,7 +31,7 @@
     }
 
     &__item:not(:last-child) {
-        margin-right: 40px;
+        margin-right: 48px;
     }
 
     &__link {
@@ -38,6 +39,7 @@
     }
 
     &__phone {
+        margin-right: 57px;
         @include similarStyles;
     }
 
